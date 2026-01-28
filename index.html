@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Security+ 701 Acronym Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Security+ 701 Acronym Trainer</h1>
+      <p>Fill in the missing word in the acronym expansion.</p>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="acronym-display">
+          <span id="acronym"></span>
+        </div>
+
+        <div class="phrase-display" id="phraseDisplay">
+          <!-- Phrase with one word blanked out -->
+        </div>
+
+        <div class="input-row">
+          <label for="answer">Missing word:</label>
+          <input type="text" id="answer" autocomplete="off" />
+        </div>
+
+        <div class="buttons">
+          <button id="checkBtn">Check</button>
+          <button id="nextBtn">Next</button>
+        </div>
+
+        <div class="feedback" id="feedback"></div>
+
+        <div class="scoreboard">
+          <span>Score: <span id="score">0</span></span>
+          <span>Attempts: <span id="attempts">0</span></span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <small>Based on CompTIA Security+ SY0‑701 acronyms.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
