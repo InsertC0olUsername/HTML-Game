@@ -1,0 +1,170 @@
+:root {
+  --bg: #0b0c10;
+  --bg-card: #1f2833;
+  --accent: #66fcf1;
+  --accent-soft: #45a29e;
+  --text-main: #c5c6c7;
+  --text-strong: #ffffff;
+  --danger: #ff6b6b;
+  --success: #4cd964;
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1f2833 0, #0b0c10 55%, #000 100%);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 720px;
+  padding: 1.5rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  color: var(--text-strong);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(31, 40, 51, 0.95);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(102, 252, 241, 0.15);
+}
+
+.acronym-display {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  letter-spacing: 0.12em;
+}
+
+.phrase-display {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.phrase-word {
+  padding: 0.1rem 0.25rem;
+}
+
+.phrase-blank {
+  display: inline-block;
+  min-width: 80px;
+  border-bottom: 2px dashed var(--accent-soft);
+  color: var(--accent-soft);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.9rem;
+  color: var(--accent-soft);
+}
+
+input[type="text"] {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid rgba(102, 252, 241, 0.3);
+  background: #0b0c10;
+  color: var(--text-strong);
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(102, 252, 241, 0.4);
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+button {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+#checkBtn {
+  background: var(--accent);
+  color: #000;
+}
+
+#nextBtn {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent-soft);
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.feedback {
+  min-height: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.feedback.correct {
+  color: var(--success);
+}
+
+.feedback.incorrect {
+  color: var(--danger);
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: var(--accent-soft);
+}
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
