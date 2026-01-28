@@ -1,0 +1,9 @@
+// data.js (or inside script.js)
+const acronyms = [
+  { acronym: "AAA", phrase: "Authentication Authorization and Accounting" },
+  { acronym: "ACL", phrase: "Access Control List" },
+  { acronym: "AES", phrase: "Advanced Encryption Standard" },
+  { acronym: "AP",  phrase: "Access Point" },
+  { acronym: "API", phrase: "Application Programming Interface" },
+  // Add many more from your Security+ 701 acronym sources
+];
